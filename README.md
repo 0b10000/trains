@@ -1,6 +1,5 @@
 # trains
-
-A datapack for Minecraft that takes the complexity out of minecart stations.
+### A datapack for Minecraft that takes the complexity out of minecart stations.
 ---
 
 First, make sure you have cloned the repository and have Node.js and NPM installed. Then run:
@@ -27,4 +26,5 @@ sand watch
 ```
 ## Credits
 Inspired by the amazing work of [flashteens](https://flashteensmc.blogspot.com/)
+
 Built using [Sandstone](https://www.sandstone.dev/)
