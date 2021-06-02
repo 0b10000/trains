@@ -27,14 +27,14 @@ jobs:
       run: npm run build
     
     - name: Zip Release
-      if: github.event == 'release'
+      if: github.event_name == 'release' && github.event.action == 'created'
       uses: TheDoctor0/zip-release@0.4.2
       with:
           path: build/trains
           filename: trains.zip
     
     - name: Upload artifact and release
-      if: github.event == 'release'
+      if: github.event_name == 'release' && github.event.action == 'created'
       uses: nanoufo/action-upload-artifacts-and-release-assets@main
       with:
         path: trains.zip
