@@ -27,4 +27,13 @@ jobs:
       
     - name: Install dependencies
       run: pnpm install
+
+    - name: Run build
+      run: pnpm run build
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: Datapack
+        path: build/trains/
  
