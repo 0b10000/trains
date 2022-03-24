@@ -9,16 +9,16 @@ npm i
 ```
 
 To build the datapack, run:
-```ts
+```bash
 pnpm run build
-// or
+# or
 sand build
 ```
 
 To automatically rebuild the datapack on each change, run:
-```ts
+```bash
 pnpm run watch
-// or
+# or
 sand watch
 ```
 ## Credits
