@@ -14,14 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
+    - uses: pnpm/action-setup@v2.0.1
+      with:
+        version: 6.20.3
     
     - name: Setup Node.js environment
       uses: actions/setup-node@v2.1.5
+      with:
+        node-version: '17.6.0'
+        cache: 'pnpm'
       
     - name: Install dependencies
-      run: npm install
-    
-    - name: Build
-      run: npm run build
-    
+      run: pnpm install
  
